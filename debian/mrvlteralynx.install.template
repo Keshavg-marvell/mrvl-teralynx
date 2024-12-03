@@ -1,0 +1,3 @@
+drivers/ipd/ipd.ko /lib/modules/KVERSION/kernel/drivers/net/ethernet/marvell/
+etc/init.d/marvell_teralynx_driver /etc/init.d/
+lib/systemd/system/marvell_teralynx_driver.service /lib/systemd/system/

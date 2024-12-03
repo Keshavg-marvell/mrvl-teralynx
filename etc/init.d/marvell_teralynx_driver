@@ -1,0 +1,35 @@
+#!/bin/bash -x
+### BEGIN INIT INFO
+# Provides:          Marvell-Teralynx-Driver
+# Required-Start:
+# Required-Stop:
+# Should-Start:
+# Should-Stop:
+# Default-Start:     S
+# Default-Stop:      0 6
+# Short-Description: Marvell Teralynx Driver
+### END INIT INFO
+
+case "$1" in
+start)
+        echo -n "Installing Marvell Teralynx Driver... "
+        rmmod ipd
+        modprobe ipd
+        ;;
+
+stop)
+        echo "Removing Marvell Teralynx Driver..."
+        rmmod ipd
+        ;;
+
+force-reload|restart)
+        echo "Not supported"
+        ;;
+
+*)
+        echo "Usage: /etc/init.d/marvell_teralynx_driver {start|stop}"
+        exit 1
+        ;;
+esac
+
+exit 0

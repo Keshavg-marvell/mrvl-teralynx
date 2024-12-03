@@ -1,0 +1,4 @@
+depmod -a
+chmod 0644 /lib/systemd/system/marvell_teralynx_driver.service
+systemctl enable marvell_teralynx_driver.service
+systemctl start marvell_teralynx_driver.service
