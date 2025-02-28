@@ -1,0 +1,2 @@
+drivers/ipd/ipd.ko /lib/modules/6.1.0-22-2-amd64/extra
+etc/modules-load.d/marvell-teralynx.conf /etc/modules-load.d/
